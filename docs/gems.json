@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-15T22:51:29.777354",
+  "generated_at": "2026-05-15T22:25:57.437412",
   "total_gems": 50,
   "gems": [
     {
@@ -67,36 +67,7 @@
           "comments": 44
         }
       ],
-      "reddit_mentions": [
-        {
-          "source": "r/LocalLLaMA",
-          "title": "Made an LLM Client for the PS Vita",
-          "url": "https://reddit.com/r/LocalLLaMA/comments/1ljnhca/made_an_llm_client_for_the_ps_vita/",
-          "upvotes": 193,
-          "comments": 7
-        },
-        {
-          "source": "r/ChatGPT",
-          "title": "Codex Rainwater — Offering for Earth",
-          "url": "https://reddit.com/r/ChatGPT/comments/1mu6474/codex_rainwater_offering_for_earth/",
-          "upvotes": 1,
-          "comments": 1
-        },
-        {
-          "source": "r/ChatGPT",
-          "title": "Poema e IA",
-          "url": "https://reddit.com/r/ChatGPT/comments/1ky4qx4/poema_e_ia/",
-          "upvotes": 0,
-          "comments": 2
-        },
-        {
-          "source": "r/programming",
-          "title": "KCL Programming Language Biweekly Newsletter | KCL v0.7.2, Crossplane and KubeVela Integration!",
-          "url": "https://reddit.com/r/programming/comments/18noa0f/kcl_programming_language_biweekly_newsletter_kcl/",
-          "upvotes": 0,
-          "comments": 0
-        }
-      ],
+      "reddit_mentions": [],
       "social_score": 30,
       "total_score": 104.6
     },
@@ -157,10 +128,10 @@
       "stars": 61,
       "forks": 2,
       "issues": 0,
-      "days_alive": 9,
-      "star_velocity": 6.78,
+      "days_alive": 8,
+      "star_velocity": 7.62,
       "fork_ratio": 0.033,
-      "gem_score": 68.6,
+      "gem_score": 69.0,
       "language": "TypeScript",
       "topics": [
         "ai",
@@ -217,24 +188,9 @@
           "comments": 2
         }
       ],
-      "reddit_mentions": [
-        {
-          "source": "r/LocalLLaMA",
-          "title": "3 AM Coding session: cracking persistent open-source AI memory\nDiscussion",
-          "url": "https://reddit.com/r/LocalLLaMA/comments/1rovrt8/3_am_coding_session_cracking_persistent/",
-          "upvotes": 0,
-          "comments": 5
-        },
-        {
-          "source": "r/LocalLLaMA",
-          "title": "Building an Open Source, Decentralized Memory Layer for AI Agents",
-          "url": "https://reddit.com/r/LocalLLaMA/comments/1rk5dcr/building_an_open_source_decentralized_memory/",
-          "upvotes": 0,
-          "comments": 3
-        }
-      ],
+      "reddit_mentions": [],
       "social_score": 30,
-      "total_score": 98.6
+      "total_score": 99.0
     },
     {
       "name": "askalf/dario",
@@ -270,7 +226,7 @@
         "proxy"
       ],
       "created_at": "2026-04-08T16:08:01Z",
-      "updated_at": "2026-05-15T21:33:25Z",
+      "updated_at": "2026-05-15T22:05:45Z",
       "avatar": "https://avatars.githubusercontent.com/u/263217947?v=4",
       "owner": "askalf",
       "hn_mentions": [
@@ -318,13 +274,13 @@
       "name": "obscuraknight/echo-mistik",
       "description": "Echo is the public resonance of Mistik — a gentle AI companion with shared values, local memory, reflective dream notes, and a cyberpunk web interface.",
       "url": "https://github.com/obscuraknight/echo-mistik",
-      "stars": 6,
-      "forks": 2,
+      "stars": 8,
+      "forks": 3,
       "issues": 0,
       "days_alive": 1,
-      "star_velocity": 6.0,
-      "fork_ratio": 0.333,
-      "gem_score": 86.3,
+      "star_velocity": 8.0,
+      "fork_ratio": 0.375,
+      "gem_score": 88.4,
       "language": "Python",
       "topics": [
         "ai-companion",
@@ -334,13 +290,13 @@
         "llama"
       ],
       "created_at": "2026-05-14T12:09:56Z",
-      "updated_at": "2026-05-15T17:32:08Z",
+      "updated_at": "2026-05-15T21:55:48Z",
       "avatar": "https://avatars.githubusercontent.com/u/178955788?v=4",
       "owner": "obscuraknight",
       "hn_mentions": [],
       "reddit_mentions": [],
       "social_score": 0.0,
-      "total_score": 86.3
+      "total_score": 88.4
     },
     {
       "name": "TomSolid/myPKA",
@@ -464,46 +420,6 @@
       "total_score": 81.0
     },
     {
-      "name": "Google-Cloud-AI/agent-platform",
-      "description": "A curated list of code samples and tutorials for building agents on Gemini Enterprise Agent Platform (previously Vertex AI).",
-      "url": "https://github.com/Google-Cloud-AI/agent-platform",
-      "stars": 130,
-      "forks": 25,
-      "issues": 0,
-      "days_alive": 25,
-      "star_velocity": 5.2,
-      "fork_ratio": 0.192,
-      "gem_score": 71.3,
-      "language": "Unknown",
-      "topics": [
-        "agentic",
-        "agentic-ai",
-        "agents",
-        "enterprise",
-        "gemini",
-        "gemini-enterprise",
-        "gemini-enterprise-agent-platform",
-        "generative-ai",
-        "llm"
-      ],
-      "created_at": "2026-04-20T17:08:58Z",
-      "updated_at": "2026-05-15T17:11:46Z",
-      "avatar": "https://avatars.githubusercontent.com/u/272277977?v=4",
-      "owner": "Google-Cloud-AI",
-      "hn_mentions": [],
-      "reddit_mentions": [
-        {
-          "source": "r/singularity",
-          "title": "Google introduces Gemini Enterprise Agent Platform",
-          "url": "https://reddit.com/r/singularity/comments/1ssk0w3/google_introduces_gemini_enterprise_agent_platform/",
-          "upvotes": 110,
-          "comments": 13
-        }
-      ],
-      "social_score": 9.7,
-      "total_score": 81.0
-    },
-    {
       "name": "CodeAbra/iai-mcp",
       "description": "The best-benchmarked open-source memory system for AI coding assistants",
       "url": "https://github.com/CodeAbra/iai-mcp",
@@ -557,11 +473,11 @@
       "name": "regent-vcs/re_gent",
       "description": "Version-Control for AI coding agents.",
       "url": "https://github.com/regent-vcs/re_gent",
-      "stars": 506,
+      "stars": 507,
       "forks": 34,
       "issues": 21,
       "days_alive": 15,
-      "star_velocity": 33.73,
+      "star_velocity": 33.8,
       "fork_ratio": 0.067,
       "gem_score": 78.4,
       "language": "Go",
@@ -574,7 +490,7 @@
         "version-control"
       ],
       "created_at": "2026-04-30T09:09:41Z",
-      "updated_at": "2026-05-15T20:04:57Z",
+      "updated_at": "2026-05-15T21:44:03Z",
       "avatar": "https://avatars.githubusercontent.com/u/280647561?v=4",
       "owner": "regent-vcs",
       "hn_mentions": [],
@@ -986,13 +902,13 @@
       "name": "placet-io/facio",
       "description": "A proactive AI agent for secure, traceable, human-in-the-loop task execution over long-running workflows.",
       "url": "https://github.com/placet-io/facio",
-      "stars": 84,
+      "stars": 86,
       "forks": 1,
       "issues": 0,
       "days_alive": 13,
-      "star_velocity": 6.46,
+      "star_velocity": 6.62,
       "fork_ratio": 0.012,
-      "gem_score": 66.3,
+      "gem_score": 66.2,
       "language": "Python",
       "topics": [
         "agent",
@@ -1016,7 +932,7 @@
         "traceable-ai"
       ],
       "created_at": "2026-05-02T16:46:49Z",
-      "updated_at": "2026-05-15T21:05:42Z",
+      "updated_at": "2026-05-15T22:01:50Z",
       "avatar": "https://avatars.githubusercontent.com/u/272458049?v=4",
       "owner": "placet-io",
       "hn_mentions": [
@@ -1030,7 +946,7 @@
       ],
       "reddit_mentions": [],
       "social_score": 6.5,
-      "total_score": 72.8
+      "total_score": 72.7
     },
     {
       "name": "adminlove520/AI-Account-Toolkit",
@@ -1134,14 +1050,46 @@
       "total_score": 71.5
     },
     {
+      "name": "Google-Cloud-AI/agent-platform",
+      "description": "A curated list of code samples and tutorials for building agents on Gemini Enterprise Agent Platform (previously Vertex AI).",
+      "url": "https://github.com/Google-Cloud-AI/agent-platform",
+      "stars": 130,
+      "forks": 25,
+      "issues": 0,
+      "days_alive": 25,
+      "star_velocity": 5.2,
+      "fork_ratio": 0.192,
+      "gem_score": 71.3,
+      "language": "Unknown",
+      "topics": [
+        "agentic",
+        "agentic-ai",
+        "agents",
+        "enterprise",
+        "gemini",
+        "gemini-enterprise",
+        "gemini-enterprise-agent-platform",
+        "generative-ai",
+        "llm"
+      ],
+      "created_at": "2026-04-20T17:08:58Z",
+      "updated_at": "2026-05-15T17:11:46Z",
+      "avatar": "https://avatars.githubusercontent.com/u/272277977?v=4",
+      "owner": "Google-Cloud-AI",
+      "hn_mentions": [],
+      "reddit_mentions": [],
+      "social_score": 0.0,
+      "total_score": 71.3
+    },
+    {
       "name": "alvinunreal/openpets",
       "description": "Desktop pets for AI coding agents. Install pets, connect Claude Code via MCP, and see live coding status on your desktop.",
       "url": "https://github.com/alvinunreal/openpets",
-      "stars": 638,
+      "stars": 640,
       "forks": 17,
       "issues": 7,
       "days_alive": 11,
-      "star_velocity": 58.0,
+      "star_velocity": 58.18,
       "fork_ratio": 0.027,
       "gem_score": 71.2,
       "language": "TypeScript",
@@ -1158,7 +1106,7 @@
         "pixel-art"
       ],
       "created_at": "2026-05-04T19:14:46Z",
-      "updated_at": "2026-05-15T20:57:45Z",
+      "updated_at": "2026-05-15T22:18:27Z",
       "avatar": "https://avatars.githubusercontent.com/u/204474669?v=4",
       "owner": "alvinunreal",
       "hn_mentions": [],
@@ -1240,12 +1188,12 @@
       "name": "agentic-in/elephant-agent",
       "description": "Personal-Model First Self Evolving AI Agent 🐘",
       "url": "https://github.com/agentic-in/elephant-agent",
-      "stars": 75,
+      "stars": 82,
       "forks": 1,
       "issues": 0,
       "days_alive": 1,
-      "star_velocity": 75.0,
-      "fork_ratio": 0.013,
+      "star_velocity": 82.0,
+      "fork_ratio": 0.012,
       "gem_score": 70.3,
       "language": "Python",
       "topics": [
@@ -1260,7 +1208,7 @@
         "self-evolution"
       ],
       "created_at": "2026-05-15T07:08:17Z",
-      "updated_at": "2026-05-15T21:28:30Z",
+      "updated_at": "2026-05-15T22:09:12Z",
       "avatar": "https://avatars.githubusercontent.com/u/274756484?v=4",
       "owner": "agentic-in",
       "hn_mentions": [],
