@@ -1,0 +1,74 @@
+name: Daily Gem Scan
+
+on:
+  schedule:
+    - cron: '0 8 * * *'   # every day at 8am UTC
+  workflow_dispatch:        # adds a "Run workflow" button in GitHub UI
+
+permissions:
+  contents: write           # needed to commit results back to repo
+  pages: write              # needed to deploy to GitHub Pages
+  id-token: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run full pipeline
+        env:
+          # Store your token as a repo secret named GH_SCAN_TOKEN
+          # GitHub > repo Settings > Secrets > Actions > New secret
+          GITHUB_TOKEN: ${{ secrets.GH_SCAN_TOKEN }}
+        run: python run_all.py
+
+      - name: Copy dashboard to Pages root
+        run: |
+          cp output/dashboard.html docs/index.html
+          mkdir -p docs
+          cp output/gems_enriched.json docs/gems.json
+
+      - name: Commit scan results
+        run: |
+          git config user.name  "gem-bot"
+          git config user.email "gem-bot@users.noreply.github.com"
+          git add output/ docs/
+          git diff --staged --quiet || git commit -m "scan: $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push
+
+  deploy-pages:
+    needs: scan
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          ref: main   # grab the freshly committed docs/
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
