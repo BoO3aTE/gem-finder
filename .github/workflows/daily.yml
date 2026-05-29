@@ -36,8 +36,8 @@ jobs:
 
       - name: Copy dashboard to Pages root
         run: |
-          cp output/dashboard.html docs/index.html
           mkdir -p docs
+          cp output/dashboard.html docs/index.html
           cp output/gems_enriched.json docs/gems.json
 
       - name: Commit scan results

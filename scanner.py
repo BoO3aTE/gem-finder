@@ -8,7 +8,7 @@ import os
 import json
 import time
 import requests
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -52,7 +52,7 @@ AI_TOPICS = [
 
 def search_repos(topic, days_back=90, min_stars=5, max_stars=800):
     """Query GitHub Search API for young repos under a given topic."""
-    since_date = (datetime.now() - timedelta(days=days_back)).strftime("%Y-%m-%d")
+    since_date = (datetime.now(timezone.utc) - timedelta(days=days_back)).strftime("%Y-%m-%d")
     query = f"topic:{topic} created:>{since_date} stars:{min_stars}..{max_stars}"
 
     url = "https://api.github.com/search/repositories"
@@ -88,8 +88,8 @@ def score_repo(repo):
     - Fork engagement ratio       → 0-20 pts
     - Issue community activity    → 0-10 pts
     """
-    created_at = datetime.strptime(repo["created_at"], "%Y-%m-%dT%H:%M:%SZ")
-    days_alive = max((datetime.now() - created_at).days, 1)
+    created_at = datetime.strptime(repo["created_at"], "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+    days_alive = max((datetime.now(timezone.utc) - created_at).days, 1)
 
     stars = repo["stargazers_count"]
     forks = repo["forks_count"]
@@ -170,7 +170,7 @@ def find_gems():
 
     # Save full results to JSON for the HTML dashboard (Step 3)
     output = {
-        "generated_at": datetime.now().isoformat(),
+        "generated_at": datetime.now(timezone.utc).isoformat(),
         "total_scanned": len(gems),
         "gems": gems[:50],
     }
